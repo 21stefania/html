@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS YFORMULARIOS</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+</head>
+<body style="background-color:rgb(66, 182, 178);">
+    <header><center>
+        <img src="img/incap.jpeg" alt="incap"width="100" height="100">
+        <h1>LISTAS Y FORMULARIOS HTML5</h1>
+        </center>
+    </header>
+    <nav>
+        <ul>
+            <li type="square" style="color: rgb(64, 116, 116);">HOME</li>
+            <li type="square" style="color: rgb(61, 105, 105);">PRODUCTOS</li>
+            <li type="square" style="color: rgb(56, 104, 104);">SERVICIOS</li>
+            <li type="square" style="color: rgb(63, 119, 119);">CONTACTO</li>
+        </ul>
+    </Nav>
+    <section>
+        <form action="datos.php"
+        method="post">
+        <fieldset>
+            <label >NOMBRE COMPLETO</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+            <label >E-MAIL</label>
+            <input type="email" name="EMAIL" placeholder="Ingrese su e-mail" required><br><br>
+            <label >PASSWORD</label>
+            <input type="password" name="nombre" placeholder="Ingrese su contraseña" required><br><br>
+            <hr>
+            <label>Selecciona tus hobbies</label><br>
+                <input type="checkbox">Cine
+                <input type="checkbox">Lectura
+                <input type="checkbox">Deporte <br><hr>
+            
+            <label>Estado civil</label><br>
+                <input type="radio">Casado
+                <input type="radio">Soltero
+                <input type="radio">Viudo
+                <br>
+                <hr>
+            <label>PROGRAMAS TECNICOS</label><br>
+            <select name="" id="">
+                <option value="">Seleccione Programa</option>
+                <option value="">Sistemas</option>
+                <option value="">Diseño Grafico</option>
+                <option value="">Contabilidad</option>
+            </select>
+            <br>
+            <hr>
+            <label for="">Tu Comentario</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>   
+        </fieldset>
+        </form>
+    </section>
+    <footer> Derechos reservados &copy; 2022 | Stefania Garzon</footer>
+</body>
+</html>
