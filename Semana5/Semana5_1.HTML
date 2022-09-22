@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS YFORMULARIOS</title>
+    
+</head>
+<link rel="stylesheet" href="CSS/Estilo_formulario.css">
+
+<body style="background-color:rgb(133, 196, 194);">
+    <header><center>
+        <img src="img1/incap.jpeg" alt="100 "width="100" height="100">
+        <h1>LISTAS Y FORMULARIOS HTML5</h1>
+        <h2>MENU NAVEGACION</h2>
+        </center>
+    </header>
+    <nav>
+        <ul>
+        <li type="square" style="color:white;">HOME</li><li type="square" style="color:white;">PRODUCTOS</li><li type="circle" style="color:white;">SERVICIOS</li><li type="circle" style="color:white;">CONTACTO</li>
+        </ul>
+    </nav>
+
+    <section>
+        <!--METHOD GET PASA LOS DATOS POR LA URL , ATRAVEZ DE PARAMETROS // METHOD POST PASA LOS
+        DATOS DE FORMA INTERNA(NO SE VEN)-->
+        
+        <form action="datos.php"
+        method="post">
+        <!--SECCION DE MARCO DE FORMULARIO-->
+        <fieldset>
+            <!--SECCION INGRESO DE NOMBRE-->
+            <label >NOMBRE COMPLETO</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            <br><br>
+            <!--SECCION INGRESO DE EMAIL-->
+            <label >E-MAIL</label>
+            <input type="email" name="EMAIL" placeholder="Ingrese su e-mail" required>
+            <br><br>
+            <!--SECCION INGRESO DE CONTRASEÑA-->
+            <label >PASSWORD</label>
+            <input type="password" name="nombre" placeholder="Ingrese su contraseña" required>
+            <br><br>
+            <hr>
+        
+            <!--SELECCIONA TUS HOBBIES-->
+            <label>Selecciona tus hobbies</label>
+            <br>
+                <input type="checkbox">Cine
+                <input type="checkbox">Lectura
+                <input type="checkbox">Deporte 
+            <br>
+            <hr>
+            <!--ESTADO CIVIL-->
+            
+            <label>Estado civil</label>
+            <br>
+                <input type="radio">Casado
+                <input type="radio">Soltero
+                <input type="radio">Viudo
+            <br>
+            <hr>
+            <!--PROGRAMAS TECNICOS-->
+            <label>PROGRAMAS TECNICOS</label>
+            <br>
+            <select name="" id="">
+                <option value="">Seleccione Programa</option>
+                <option value="">Sistemas</option>
+                <option value="">Diseño Grafico</option>
+                <option value="">Contabilidad</option>
+            </select>
+            <br>
+            <hr>
+
+            <!--COMENTARIOS-->
+            <label for="">Tu Comentario</label>
+            <textarea name="MENSAJE" cols="40" rows="5"></textarea>
+            <br>
+
+            <!--SECCION DE FORMULARIO SUBMIT: ENVIAR DATOS; RESET:BORRAR DATOS INGRESADOS-->
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>   
+            </fieldset>
+            </form>
+            </section>
+            <br>
+
+            <!--PIE DE PAGINA-->
+            <footer> Derechos reservados &copy; 2022 | Stefania Garzon</footer>
+</body>
+</html>

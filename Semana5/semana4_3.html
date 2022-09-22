@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body style="background-color:rgb(159, 230, 227);">
+    <center><h1>FORMULARIO CONTACTO</h1>
+<form method="post"action="datosenvia.php">
+    <!--NOMBRE-->
+
+    <br>
+    <label for="">NOMBRE COMPLETO</label><br>
+    <input type="text" size="30" placeholder="Ingresa tu nombre completo"
+    name="nombre" autofocus required/>
+    <br>
+
+    <!--CORREO ELECTRONICO-->
+
+    <br>
+    <label for="">CORREO ELECTRONICO</label><br>
+    <input type="email" placeholder="ingrese email:usuario@dominio.com"
+    size="40 title="Esciba su email" "name="email" required/>
+    <br>
+
+    <!--FECHA DE NACIMIENTO-->
+    <br>
+    <label>FECHA DE NACIMIENTO</label> <br>
+    <input type="date" size="30" title="Ingrese fecha de nacimiento"
+    name="fechanac" autofocus required/>
+    <br>
+
+    <!--BARRA DE SATISFACCION-->
+    <br>
+    <label>DESLICE LA BARRA Y COLOQUE GRADO DE SATISFACCION DE SERVICIO</label> 
+    <br>
+    <input type="range" min="1" max="10" title="Deslice barra para colocar su grado de satisfaccion" 
+    name="BARRA"/>
+    <br>
+
+    <!--SELECCIONE COLOR-->
+    <br>
+    <label>SELECCIONE COLOR PREFERIDO</label> 
+    <br>
+    <input type="color" value="#FFFF000" title="SELECCIONE SU COLOR PREFERIDO" 
+    name="color"/>
+    <br>
+
+    <!--EDAD-->
+    <br>
+    <label>SELECCIONE SU EDAD</label> 
+    <br>
+    <input type="number" min="1"  max="100" title="Ingrese su edad" 
+    name="edad"/>
+    <br>
+    <br>
+
+    <label>SELECCIONE ARCHIVO</label> 
+    <br>
+    <input type="file"  
+    name="ARCHIVO"/>
+
+    <br><br><br>
+    <input type="submit" value="Enviar"/>  
+    
+</form>
+    </body>
+        </html>
