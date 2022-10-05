@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*FONDO*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(139, 197, 158),rgb(201, 97, 97));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*UBICACION*/
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*LOGO*/
+.logo{
+    width: 130px;
+    cursor: pointer;
+
+}
+/*HOME*/
+.navbar ul li:first-child a{
+    background-image: url(./imgs/casa_preview_rev_1.png);
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding:20px 40px ;
+}
+
+.navbar ul li:first-child:hover a{
+    background-image: url(./imgs/casa_preview_rev_1.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+/*FORMATO MENU*/
+nav{
+    max-width:900px ;
+    margin: auto;
+    background-color:rgb(82, 168, 86);
+    font-size:20px ;
+    margin-top: 50px;
+}
+
+.menu_horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu_horizontal li a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 5, 10);
+    text-decoration: none;
+
+}
+
+.menu_horizontal> li :hover{
+    background-color: rgba(107, 218, 107, 0.637);
+
+}
+
+
+
+.Menu_vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(111, 207, 132, 0.5);
+}
+
+.menu_horizontal li:hover .Menu_vertical{
+    display: block;
+}
+
+.Menu_vertical li:hover{
+    background-color: rgb(24, 23, 23);
+
+}
+
+.Menu_vertical li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 15px, 15px, 15px, 20px;
+    text-decoration: none;
+    
+
+}
+
+
+/*DISEÑO DE LINEA EN TEXTO DEL MENU*/
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+.navbar ul li::before{
+    content:"" ;
+    height: 3px;
+    width: 0%;
+    background: rgb(189, 97, 97);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+}
