@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARJETA TULLAVE</title>
+    <!---LINK DE SITIO SWEETALERT-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="transmilenio.jpg" alt="" width="550" height="250">
+        <h1>SALDO DE TARJETA TULLAVE</h1>
+        <script>
+            //ENTRADA
+            var saldo=0;
+            const tm=2650;
+            saldo= parseInt(prompt("Ingrese saldo de su tarjeta de Transmilenio"));
+           //PROCESO
+            if( saldo >= tm )
+            {
+            swal("Ingrese a Sistema Transmilenio","sucess");
+            }
+            else
+            {
+            swal("Recargue tarjeta, SALDO INSUFICIENTE ...","error");
+            }
+        </script>
+    </center>
+</body>
+</html>
