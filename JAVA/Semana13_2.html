@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contraseña ciclo for</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <h1>Ciclo for if contraseña</h1>
+    <h3>validacion de ingreso/sesion</h3>
+    <script>
+        let datof;
+        let sw=0;
+        let clave=123;
+
+
+    //CICLO FOR
+    for(f=1;f<=3;f++)
+    {
+        datof=parseInt(prompt("INGRESE CONTRASEÑA"));
+        if(datof==clave){
+            swal("USUARIO","ACCESO PERMITIDO","success");
+            document.write("ACCESS GRANTED");
+            sw=1;//SWITCHE PRENDIDO
+            break;
+        }
+    }
+    if (sw==0){
+  swal("USUARIO","ACCESO BLOQUEADO","error");
+  }
+
+    </script>
+    
+</body>
+</html>
