@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRUCTURA ARRAYS </title>
+</head>
+<body>
+    <center>
+        <h1>Crear array por captura </h1>
+        <h3>CON CICLO FOR</h3>
+    <script>
+
+        let num;
+        let datos=new Array();
+
+//CONTROLA LA LONGITUD DEL ARRAY
+        num=parseInt(prompt("INGRESE CANTIDAD DE ELEMENTOS A GUARDAR EN ARRAYS"));
+
+
+//CICLO FOR CAPTURAR
+        for (i=0;i<num;i++){
+        datos[i]=prompt("INGRESE DATOS AL ARRAYS"+i);
+        }
+
+//IMPRIMIR ARRAYS
+        for (i=0;i<num;i++){
+        document.write(datos[i]+"<br>");
+        console.log(datos);
+}
+    </script>
+</body>
+
+</html>
