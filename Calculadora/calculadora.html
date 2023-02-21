@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de dos numeros</title>
+
+</head>
+<body>
+
+    <center>
+    <h1>SUMA DE DOS NUMEROS</h1>
+
+<!--INGRESA NUMERO 1-->
+    <label for="num1"></label>Numero1
+    <br>
+    <input type="number" name="num1" id="num1">
+    <br>
+
+<!--INGRESA NUMERO 2-->
+    <label for="num2"></label>Numero2
+    <br>
+    <input type="number" name="num2" id="num2">
+    <br>
+
+<!--RESULTADO-->   
+<p>
+    <button type="button" name="a" id="a" onclick="valor()" value="resultado">Suma</button>
+    <label for="num3"></label>
+    <br>
+    <input type="number" name="resultado" id="resultado" placeholder="Resultado">
+    <br>
+</p>
+
+<!--SCRIPT-->
+<script type="text/javascript">
+    function valor () {
+    var numero1=document.getElementById('num1').value;
+    var numero2=document.getElementById('num2').value;  
+    var resultado=(numero1+numero2)
+    document.getElementById('resultado').value=resultado;
+}
+
+</script>
+</body>
+</html>
